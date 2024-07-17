@@ -6,17 +6,17 @@ const express = require('express')
 //Now we'll mae a varaible named app using express
 const app =  express()
 
-const port = 3000 //virtual ports, server will listen on port 3000
+const port = 4000 //virtual ports, server will listen on port 3000
 
 
 //app will listen on routes eg: / route p listen kro, and send response if you get any request , and to send response it'll be provided with a callback
 
 app.get('/',(req,res)=>{
-    res.send('hello express')
+    res.send('home page')
 })
 
 app.get('/twitter',(req,res)=>{
-    res.send('hello twitter')
+    res.send('twitter page')
 })
 
 //now app will listen on main port and will give a callback 
