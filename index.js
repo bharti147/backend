@@ -22,5 +22,5 @@ app.get('/twitter',(req,res)=>{
 //now app will listen on main port and will give a callback 
 
 app.listen(process.env.PORT,()=>{
-    console.log(`example app listening on port ${port}`)
+    console.log(`example app listening on port ${process.env.PORT}`)
 })
